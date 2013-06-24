@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{84454D5F-D4E9-4280-93BF-D56724E9BFAA}</ProjectGuid>
+    <ProjectGuid>{6D9DD54C-804E-4211-AA4E-62832594FCC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FixingIT.Tests</RootNamespace>
@@ -123,9 +123,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FixingIT\FixingIT.csproj">
-      <Project>{88D6AD2A-B6BC-481F-BB07-9A48560C9F1A}</Project>
-      <Name>FixingIT</Name>
+    <ProjectReference Include="..\FixingIT.Web\FixingIT.Web.csproj">
+      <Project>{6A8D8819-CD04-4D8A-BA87-886A6842C748}</Project>
+      <Name>FixingIT.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
