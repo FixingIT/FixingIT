@@ -1,23 +1,13 @@
 ﻿@{
     Layout = "";
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Er enda IT-kontakt";
 }
 
 <!DOCTYPE html>
 <html lang="sv">
-    @Html.Partial("_HtmlHead")
+    @Html.Partial("_HtmlHead", new { ViewBag.Title })
     <body>
-        <div class="container">
-            <div id="indexLogotypeContainer" class="pull-left">
-                <h1>FixingIT</h1>
-            </div>
-            <div id="indexInformationContainer">
-                <p>
-                    Stellan FixingIT<br />
-                    <a href="mailto:info@fixingit.se" class="btn btn-link">info @@ fixingit.se</a>
-                </p>
-            </div>
-        </div>
+        @Html.Partial("_FirstPage")
     </body>
     @Html.Partial("_ScriptsBottom")
 </html>

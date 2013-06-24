@@ -53,7 +53,9 @@ namespace FixingIT.Web
             bundles.Add(new StyleBundle("~/bundles/styles/jquery-ui").Include(
                         "~/Content/themes/base/minified/jquery.ui.min.css",
                         "~/Content/themes/base/minified/jquery.ui.accordion.min.css",
+                        "~/Content/themes/base/minified/jquery.ui.all.min.css",
                         "~/Content/themes/base/minified/jquery.ui.autocomplete.min.css",
+                        "~/Content/themes/base/minified/jquery.ui.base.min.css",
                         "~/Content/themes/base/minified/jquery.ui.button.min.css",
                         "~/Content/themes/base/minified/jquery.ui.core.min.css",
                         "~/Content/themes/base/minified/jquery.ui.datepicker.min.css",
@@ -62,8 +64,10 @@ namespace FixingIT.Web
                         "~/Content/themes/base/minified/jquery.ui.resizable.min.css",
                         "~/Content/themes/base/minified/jquery.ui.selectable.min.css",
                         "~/Content/themes/base/minified/jquery.ui.slider.min.css",
+                        "~/Content/themes/base/minified/jquery.ui.spinner.min.css",
                         "~/Content/themes/base/minified/jquery.ui.tabs.min.css",
-                        "~/Content/themes/base/minified/jquery.ui.theme.min.css"
+                        "~/Content/themes/base/minified/jquery.ui.theme.min.css",
+                        "~/Content/themes/base/minified/jquery.ui.tooltip.min.css"
             ));
 
             bundles.Add(new StyleBundle("~/bundles/styles/own-style").Include(
