@@ -1,4 +1,8 @@
 ﻿    <head>
+        @if (null == ViewBag.Title)
+        {
+            ViewBag.Title = "Er enda IT-kontakt";
+        }
         <title>FixingIT - @ViewBag.Title</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +11,6 @@
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         @Styles.Render("~/bundles/styles/own-style")
         @Styles.Render("~/bundles/styles/bootstrap")
-        @Styles.Render("~/bundles/styles/jquery-ui")
-        @Styles.Render("~/bundles/styles/own-style")
+        @Styles.Render("~/bundles/styles/jquery-ui-min")
         @Scripts.Render("~/bundles/scripts/modernizr")
     </head>

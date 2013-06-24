@@ -1,13 +1,13 @@
 ﻿@{
     Layout = "";
-    ViewBag.Title = "Er enda IT-kontakt";
 }
-
 <!DOCTYPE html>
 <html lang="sv">
     @Html.Partial("_HtmlHead", new { ViewBag.Title })
-    <body>
-        @Html.Partial("_FirstPage")
+    <body id="index">
+        <div class="container">
+            @Html.Partial("_FirstPage")
+        </div>
     </body>
     @Html.Partial("_ScriptsBottom")
 </html>
