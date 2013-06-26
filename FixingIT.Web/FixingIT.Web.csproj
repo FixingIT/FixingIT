@@ -333,7 +333,7 @@
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -342,9 +342,10 @@
     <Content Include="Views\Shared\_AccountPartial.cshtml" />
     <Content Include="Views\Shared\_MainModal.cshtml" />
     <Content Include="Views\Shared\_ScriptsBottom.cshtml" />
-    <Content Include="Views\Home\_FirstPage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-2.0.2.min.map" />
+    <Content Include="Views\Home\_Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

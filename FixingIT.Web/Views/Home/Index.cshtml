@@ -1,13 +1,27 @@
 ﻿@{
-    Layout = "";
+    Layout = "~/Views/Shared/_Index.cshtml";
 }
-<!DOCTYPE html>
-<html lang="sv">
-    @Html.Partial("_HtmlHead", new { ViewBag.Title })
-    <body id="index">
-        <div class="container">
-            @Html.Partial("_FirstPage")
-        </div>
-    </body>
-    @Html.Partial("_ScriptsBottom")
-</html>
+            <div id="indexLogotypeContainer" class="pull-left">
+                <h1>Fi<span style="color:#fff; font-size:1em; vertical-align:center;">}{</span>ing<span style="color:#fff;">:</span>IT</h1>
+            </div>
+            <div id="indexMenuInfoContainer" class="pull-right">
+                <div id="indexMenu" class="navbar navbar-inverse">
+                        <div class="navbar-inner">
+                        <ul class="nav">
+                            <li class="nav"><a href="#" class="">Kunder & Referenser</a></li>
+                            <li class="nav"><a href="#" class="mainModalBtn" data-modal-title="Kontakta oss" data-modal-url="@Url.Action("_Contact", "Home")">Kontakta oss</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="indexInfo">
+                    <p>
+                        Stellan FixingIT
+                        Kometgatan 2C LGH 1302
+                        441 36 Alingsås
+                    </p>
+                    <p>
+                        Telefon: 070-450 45 45
+                        E-mail: <a href="mailto:info@fixingit.se" class="">info @@ fixingit.se</a>
+                    </p>
+                </div>
+            </div>

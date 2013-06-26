@@ -66,7 +66,7 @@ h5, h6 {
 }
 
 body#index .container {
-    height:60%;
+    height:300px;
     width:60%;
     margin: 100px auto;
     padding:1%;
@@ -80,14 +80,6 @@ body#index .container {
     box-shadow: inset 0px 1px 16px #0a090a;
 }
 
-body#index .content {
-    height:100%;
-    width:100%;
-    display:inline;
-    margin: 0;
-    padding:0;
-}
-
 body#index #indexLogotypeContainer {
     height:100%;
     width:60%;
@@ -97,17 +89,152 @@ body#index #indexLogotypeContainer {
     margin:0;
     padding:0;
 }
+    body#index #indexLogotypeContainer h1 {
+        color:#ff6a00;
+        font-size:7em;
+        margin:26% auto auto auto;
+        padding:0;
+    }
 
-body#index #indexLogotypeContainer h1 {
-    font-size:8em;
-    margin:26% auto auto auto;
-    padding:0;
-}
-
-body#index #indexInformationContainer {
+body#index #indexMenuInfoContainer {
     height:100%;
     width:40%;
     background:#fff;
     margin:0;
     padding:0;
 }
+        body#index #indexMenuInfoContainer .navbar .navbar-inner,
+        body#index #indexMenuInfoContainer .navbar .navbar-inner ul,
+        body#index #indexMenuInfoContainer .navbar .navbar-inner ul li {
+            width:100%;
+            text-align:center;
+            margin:0;
+            padding:0;
+        }
+            body#index #indexMenuInfoContainer .navbar .navbar-inner ul li a {
+                width:100%;
+                text-align:center;
+                margin:0;
+                padding:10px 0;
+            }
+
+
+/* START CSS FOR AJAX LOADER */
+#circleG{
+    width:139px;
+    text-align:center;
+    vertical-align:middle;
+    margin:auto;
+    padding:0;
+}
+
+.circleG{
+    height:32px;
+    width:32px;
+    background-color:#ff6a00;
+    text-align:center;
+    vertical-align:middle;
+    float:left;
+    margin:0 5px;
+    padding:0;
+    -moz-animation-name:bounce_circleG;
+    -moz-animation-duration:1.0499999999999998s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -moz-border-radius:21px;
+    -webkit-animation-name:bounce_circleG;
+    -webkit-animation-duration:1.0499999999999998s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -webkit-border-radius:21px;
+    -ms-animation-name:bounce_circleG;
+    -ms-animation-duration:1.0499999999999998s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -ms-border-radius:21px;
+    -o-animation-name:bounce_circleG;
+    -o-animation-duration:1.0499999999999998s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    -o-border-radius:21px;
+    animation-name:bounce_circleG;
+    animation-duration:1.0499999999999998s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+    border-radius:21px;
+}
+
+#circleG_1{
+    -moz-animation-delay:0.20999999999999996s;
+    -webkit-animation-delay:0.20999999999999996s;
+    -ms-animation-delay:0.20999999999999996s;
+    -o-animation-delay:0.20999999999999996s;
+    animation-delay:0.20999999999999996s;
+}
+
+#circleG_2{
+    -moz-animation-delay:0.48999999999999994s;
+    -webkit-animation-delay:0.48999999999999994s;
+    -ms-animation-delay:0.48999999999999994s;
+    -o-animation-delay:0.48999999999999994s;
+    animation-delay:0.48999999999999994s;
+}
+
+#circleG_3{
+    -moz-animation-delay:0.63s;
+    -webkit-animation-delay:0.63s;
+    -ms-animation-delay:0.63s;
+    -o-animation-delay:0.63s;
+    animation-delay:0.63s;
+}
+
+@-moz-keyframes bounce_circleG{
+    0%{
+    }
+    50%{
+    background-color:#000000;
+    }
+    100%{
+    }
+}
+
+@-webkit-keyframes bounce_circleG{
+    0%{
+    }
+    50%{
+        background-color:#000000;
+    }
+    100%{
+    }
+}
+
+@-ms-keyframes bounce_circleG{
+    0%{
+    }
+    50%{
+        background-color:#000000;
+    }
+    100%{
+    }
+}
+
+@-o-keyframes bounce_circleG{
+    0%{
+    }
+    50%{
+        background-color:#000000;
+    }
+    100%{
+    }
+}
+
+@keyframes bounce_circleG{
+    0%{
+    }
+    50%{
+        background-color:#000000;
+    }
+    100%{
+    }
+}
+/* END CSS FOR AJAX LOADER */ 
