@@ -8,22 +8,28 @@ console.log("UI");
 
 var UIModelScript = (function () {
     return {
-        openReferencesPage: function () {
+        containerDIVOpen: true,
+
+        toggleReferencesPage: function (hide) {
             "use strict";
 
-            $('body#index .container').animate({
-                opacity: 0.0
-            }, 800, function () {
-                $('body#index .container').css("display", "none");
-            });
+            if (hide)
+                this.containerDIVOpen = true;
 
-        },
-        closeReferencesPage: function (provider, displayName, returnUrl) {
-            "use strict";
+            if (this.containerDIVOpen === true) {
+                this.containerDIVOpen = false;
 
-            $('body#index .container').animate({
-                opacity: 1.0
-            }, 800);
+                $('html#index .container').stop(true).show().fadeOut(800, function () {
+                    //$('html#index .container').css("display","none");
+                });
+            }
+            else {
+                this.containerDIVOpen = true;
+
+                //$('html#index .container').css("display","none");
+                $('html#index .container').stop(true).hide().fadeIn(800);
+            }
+
         }
     };
 });

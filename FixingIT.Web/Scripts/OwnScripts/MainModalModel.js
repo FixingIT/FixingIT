@@ -32,7 +32,6 @@ var mainModalScript = (function () {
                 }
                 $('#MainModalContent').delay(1000);
                 $('#MainModalContent').html(data);
-                //$('#circleG').delay(700);
                 $('#circleG').fadeOut(500);
                 $('#MainModalContent').fadeIn(500);
             });

@@ -16,7 +16,7 @@ body {
     overflow-x: hidden;
 }
 
-    body#index {
+    html#index body {
         color: #333;
         overflow: hidden;
     }
@@ -65,7 +65,7 @@ h5, h6 {
     font-size: 1em;
 }
 
-body#index .container {
+html#index .container {
     height:300px;
     width:60%;
     margin: 100px auto;
@@ -80,7 +80,7 @@ body#index .container {
     box-shadow: inset 0px 1px 16px #0a090a;
 }
 
-body#index #indexLogotypeContainer {
+html#index #indexLogotypeContainer {
     height:100%;
     width:60%;
     background:rgb(0, 0, 0);
@@ -89,29 +89,29 @@ body#index #indexLogotypeContainer {
     margin:0;
     padding:0;
 }
-    body#index #indexLogotypeContainer h1 {
+    html#index #indexLogotypeContainer h1 {
         color:#ff6a00;
         font-size:7em;
         margin:26% auto auto auto;
         padding:0;
     }
 
-body#index #indexMenuInfoContainer {
+html#index #indexMenuInfoContainer {
     height:100%;
     width:40%;
     background:#fff;
     margin:0;
     padding:0;
 }
-        body#index #indexMenuInfoContainer .navbar .navbar-inner,
-        body#index #indexMenuInfoContainer .navbar .navbar-inner ul,
-        body#index #indexMenuInfoContainer .navbar .navbar-inner ul li {
+        html#index #indexMenuInfoContainer .navbar .navbar-inner,
+        html#index #indexMenuInfoContainer .navbar .navbar-inner ul,
+        html#index #indexMenuInfoContainer .navbar .navbar-inner ul li {
             width:100%;
             text-align:center;
             margin:0;
             padding:0;
         }
-            body#index #indexMenuInfoContainer .navbar .navbar-inner ul li a {
+            html#index #indexMenuInfoContainer .navbar .navbar-inner ul li a {
                 width:100%;
                 text-align:center;
                 margin:0;

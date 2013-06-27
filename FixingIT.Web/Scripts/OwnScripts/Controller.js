@@ -15,8 +15,23 @@ $(document).ready(function () {
     var accountScript = accountModelScript();
     var UI = UIModelScript();
 
-    $('.referencesBtn').click(function (event) {
-        UI.openReferencesPage();
+    $('html#index').click(function (event) {
+        UI.toggleReferencesPage();
+    });
+
+    //$('.referencesBtn').click(function (event) {
+    //    UI.toggleReferencesPage();
+    //});
+
+    $('html#index .container').not('.referencesBtn').click(function (event) {
+        //console.log($(this).hasClass('referencesBtn'));
+
+        //if ($(this).find('.referencesBtn'))
+        //    UI.containerDIVOpen = true;
+        //else
+            UI.containerDIVOpen = true;
+
+        UI.toggleReferencesPage();
     });
 
     //$(".term").autocomplete({
