@@ -299,6 +299,7 @@
     <Content Include="Scripts\OwnScripts\Controller.js" />
     <Content Include="Scripts\OwnScripts\MainModalModel.js" />
     <Content Include="Scripts\OwnScripts\ModalController.js" />
+    <Content Include="Scripts\OwnScripts\UIModel.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
