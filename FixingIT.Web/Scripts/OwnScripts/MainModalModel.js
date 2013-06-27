@@ -7,6 +7,7 @@
 var mainModalScript = (function () {
     return {
         setModal: function (title, url, footerurl, reload, error) {
+            $('#circleG').fadeOut(1);
             $('#MainModalContent').empty();
             $('#MainModalContent').hide(0);
             $('#MainModalFooter').empty();
@@ -16,14 +17,13 @@ var mainModalScript = (function () {
 
             $('#MainModal').modal('show');
 
-            $('#circleG').css("opacity",1.0);
-            $('#circleG').show(0);
+            $('#circleG').fadeIn(700);
 
             if (undefined !== footerurl) {
                 var getFooter = $.get(footerurl, function (data) {
                     $('#MainModalFooter').delay(1000);
                     $('#MainModalFooter').html(data);
-                    $('#MainModalFooter').show(500);
+                    $('#MainModalFooter').fadeIn(500);
                 });
             }
             var getContent = $.get(url, function (data) {
@@ -32,12 +32,9 @@ var mainModalScript = (function () {
                 }
                 $('#MainModalContent').delay(1000);
                 $('#MainModalContent').html(data);
-                $('#circleG').delay(700);
-                $('#circleG').animate({
-                    opacity: 0.0
-                }, 300);
-                $('#circleG').hide(0);
-                $('#MainModalContent').show(500);
+                //$('#circleG').delay(700);
+                $('#circleG').fadeOut(500);
+                $('#MainModalContent').fadeIn(500);
             });
 
             if (reload === true) {

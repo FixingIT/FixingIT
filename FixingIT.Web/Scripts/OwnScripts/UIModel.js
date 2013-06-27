@@ -4,18 +4,26 @@
 /// <reference path="../bootstrap.min.js" />
 /// <reference path="../../Views/Shared/_Layout.cshtml" />
 
-var accountModelScript = (function () {
+console.log("UI");
+
+var UIModelScript = (function () {
     return {
         openReferencesPage: function () {
             "use strict";
 
-            $('body#index .container').hide()
+            $('body#index .container').animate({
+                opacity: 0.0
+            }, 800, function () {
+                $('body#index .container').css("display", "none");
+            });
+
         },
         closeReferencesPage: function (provider, displayName, returnUrl) {
             "use strict";
 
-            console.log("provider: " + provider + "displayName: " + displayName + "returnUrl: " + returnUrl);
-            return;
+            $('body#index .container').animate({
+                opacity: 1.0
+            }, 800);
         }
     };
 });

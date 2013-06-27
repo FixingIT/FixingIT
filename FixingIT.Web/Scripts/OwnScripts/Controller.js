@@ -3,14 +3,21 @@
 /// <reference path="../jquery.validate.min.js" />
 /// <reference path="../bootstrap.min.js" />
 /// <reference path="../../Views/Shared/_Layout.cshtml" />
+/// <reference path="UIModel.js" />
 /// <reference path="MainModalModel.js" />
 /// <reference path="AccountModel.js" />
+/*global UIModelScript:true*/
 /*global mainModalScript:true*/
 /*global accountModelScript:true*/
 
 $(document).ready(function () {
     "use strict";
     var accountScript = accountModelScript();
+    var UI = UIModelScript();
+
+    $('.referencesBtn').click(function (event) {
+        UI.openReferencesPage();
+    });
 
     //$(".term").autocomplete({
     //    source: function (request, response) {
