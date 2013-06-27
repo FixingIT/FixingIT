@@ -13,21 +13,23 @@ var UIModelScript = (function () {
         toggleReferencesPage: function (hide) {
             "use strict";
 
-            if (hide)
-                this.containerDIVOpen = true;
+            //if (hide)
+            //    this.containerDIVOpen = true;
 
             if (this.containerDIVOpen === true) {
                 this.containerDIVOpen = false;
+                //$('#contentContainer').toggleClass("containerDIVOpen");
 
-                $('html#index .container').stop(true).show().fadeOut(800, function () {
+                $('#contentContainer').stop(true).show().fadeOut(800, function () {
                     //$('html#index .container').css("display","none");
                 });
             }
             else {
                 this.containerDIVOpen = true;
+                //$('#contentContainer').toggleClass("containerDIVOpen");
 
                 //$('html#index .container').css("display","none");
-                $('html#index .container').stop(true).hide().fadeIn(800);
+                $('#contentContainer').stop(true).hide().fadeIn(800);
             }
 
         }

@@ -15,6 +15,10 @@ $(document).ready(function () {
     var accountScript = accountModelScript();
     var UI = UIModelScript();
 
+    $('#backgroundCarousel').carousel({
+        interval: 1000
+    });
+
     $('html#index').click(function (event) {
         UI.toggleReferencesPage();
     });
@@ -23,7 +27,7 @@ $(document).ready(function () {
     //    UI.toggleReferencesPage();
     //});
 
-    $('html#index .container').not('.referencesBtn').click(function (event) {
+    $('html#index #contentContainer').not('.referencesBtn').click(function (event) {
         //console.log($(this).hasClass('referencesBtn'));
 
         //if ($(this).find('.referencesBtn'))
@@ -31,6 +35,11 @@ $(document).ready(function () {
         //else
             UI.containerDIVOpen = true;
 
+        UI.toggleReferencesPage();
+    });
+
+    $('#MainModal').bind('hide', function () {
+        UI.containerDIVOpen = true;
         UI.toggleReferencesPage();
     });
 

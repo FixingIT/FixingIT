@@ -65,7 +65,7 @@ h5, h6 {
     font-size: 1em;
 }
 
-html#index .container {
+html#index #contentContainer {
     height:300px;
     width:60%;
     margin: 100px auto;
@@ -80,7 +80,7 @@ html#index .container {
     box-shadow: inset 0px 1px 16px #0a090a;
 }
 
-html#index #indexLogotypeContainer {
+#contentContainer #indexLogotypeContainer {
     height:100%;
     width:60%;
     background:rgb(0, 0, 0);
@@ -89,35 +89,73 @@ html#index #indexLogotypeContainer {
     margin:0;
     padding:0;
 }
-    html#index #indexLogotypeContainer h1 {
+    #contentContainer #indexLogotypeContainer h1 {
         color:#ff6a00;
         font-size:7em;
         margin:26% auto auto auto;
         padding:0;
     }
 
-html#index #indexMenuInfoContainer {
+#contentContainer #indexMenuInfoContainer {
     height:100%;
     width:40%;
     background:#fff;
     margin:0;
     padding:0;
 }
-        html#index #indexMenuInfoContainer .navbar .navbar-inner,
-        html#index #indexMenuInfoContainer .navbar .navbar-inner ul,
-        html#index #indexMenuInfoContainer .navbar .navbar-inner ul li {
+        #contentContainer #indexMenuInfoContainer .navbar .navbar-inner,
+        #contentContainer #indexMenuInfoContainer .navbar .navbar-inner ul,
+        #contentContainer #indexMenuInfoContainer .navbar .navbar-inner ul li {
             width:100%;
             text-align:center;
             margin:0;
             padding:0;
         }
-            html#index #indexMenuInfoContainer .navbar .navbar-inner ul li a {
+            #contentContainer #indexMenuInfoContainer .navbar .navbar-inner ul li a {
                 width:100%;
                 text-align:center;
                 margin:0;
                 padding:10px 0;
             }
 
+/* START CSS FOR BACKGROUND CAROUSEL */
+
+#backgroundCarousel {
+    z-index: -99; /* Keeps carousel behind all other content. */
+}
+#backgroundCarousel .item {
+    position: fixed; 
+    height: 100%;
+    width: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+#backgroundCarousel .one {
+    background: url(../Images/orderedList1.png);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+#backgroundCarousel .two {
+    background: url(../Images/orderedList2.png);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+#backgroundCarousel .three {
+    background: url(../Images/orderedList3.png);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+#backgroundCarousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+
+/* END CSS FOR BACKGROUND CAROUSEL */
 
 /* START CSS FOR AJAX LOADER */
 #circleG{

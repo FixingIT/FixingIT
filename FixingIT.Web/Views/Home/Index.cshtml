@@ -1,27 +1,26 @@
-﻿@{
-    Layout = "~/Views/Shared/_Index.cshtml";
-}
-            <div id="indexLogotypeContainer" class="pull-left">
-                <h1>Fi<span style="color:#fff; font-size:1em; vertical-align:center;">}{</span>ing<span style="color:#fff;">:</span>IT</h1>
+﻿<div id="contentContainer" class="container">
+    <div id="indexLogotypeContainer" class="pull-left">
+        <h1>Fi<span style="color:#fff; font-size:1em; vertical-align:center;">}{</span>ing<span style="color:#fff;">:</span>IT</h1>
+    </div>
+    <div id="indexMenuInfoContainer" class="pull-right">
+        <div id="indexMenu" class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li class="nav"><a href="#" class="referencesBtn">Kunder & Referenser</a></li>
+                    <li class="nav"><a href="#" class="mainModalBtn" data-modal-title="Kontakta oss" data-modal-url="@Url.Action("_Contact", "Home")">Kontakta oss</a></li>
+                </ul>
             </div>
-            <div id="indexMenuInfoContainer" class="pull-right">
-                <div id="indexMenu" class="navbar navbar-inverse">
-                        <div class="navbar-inner">
-                        <ul class="nav">
-                            <li class="nav"><a href="#" class="referencesBtn">Kunder & Referenser</a></li>
-                            <li class="nav"><a href="#" class="mainModalBtn" data-modal-title="Kontakta oss" data-modal-url="@Url.Action("_Contact", "Home")">Kontakta oss</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="indexInfo">
-                    <p>
-                        Stellan FixingIT
-                        Kometgatan 2C LGH 1302
-                        441 36 Alingsås
-                    </p>
-                    <p>
-                        Telefon: 070-450 45 45
-                        E-mail: <a href="mailto:info@fixingit.se" class="">info @@ fixingit.se</a>
-                    </p>
-                </div>
-            </div>
+        </div>
+        <div id="indexInfo">
+            <p>
+                Stellan FixingIT<br />
+                Kometgatan 2C LGH 1302<br />
+                441 36 Alingsås
+            </p>
+            <p>
+                Telefon: 070-450 45 45<br />
+                E-mail: <a href="mailto:info@fixingit.se" class="">info @@ fixingit.se</a>
+            </p>
+        </div>
+    </div>
+</div>
