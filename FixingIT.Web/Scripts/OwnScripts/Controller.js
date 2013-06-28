@@ -14,12 +14,20 @@ $(document).ready(function () {
     "use strict";
     var accountScript = accountModelScript();
     var UI = UIModelScript();
+    //UI.containerDIVOpen = false;
+    //UI.toggleReferencesPage();
+
+    $('<div id="backgroundCarouselBackdrop" class="modal-backdrop"></div>').appendTo('#backgroundCarousel');
 
     $('#backgroundCarousel').carousel({
-        interval: 1000
+        pause: false,
+        interval: 7000
     });
 
-    $('html#index').click(function (event) {
+    $('html').click(function (event) {
+        UI.toggleReferencesPage();
+    });
+    $('#backgroundCarousel íframe').click(function (event) {
         UI.toggleReferencesPage();
     });
 

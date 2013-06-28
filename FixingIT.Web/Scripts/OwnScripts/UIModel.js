@@ -18,7 +18,10 @@ var UIModelScript = (function () {
 
             if (this.containerDIVOpen === true) {
                 this.containerDIVOpen = false;
-                //$('#contentContainer').toggleClass("containerDIVOpen");
+                //$('#backgroundCarousel iframe').toggleClass("modal-backdrop");
+                $("#backgroundCarouselBackdrop").remove();
+                $('#backgroundCarousel').carousel('pause');
+                //$('#backgroundCarousel').carousel({ pause: true, interval: false });
 
                 $('#contentContainer').stop(true).show().fadeOut(800, function () {
                     //$('html#index .container').css("display","none");
@@ -26,7 +29,10 @@ var UIModelScript = (function () {
             }
             else {
                 this.containerDIVOpen = true;
-                //$('#contentContainer').toggleClass("containerDIVOpen");
+                //$('#backgroundCarousel iframe').toggleClass("modal-backdrop");
+                $('<div id="backgroundCarouselBackdrop" class="modal-backdrop"></div>').appendTo('#backgroundCarousel');
+                $('#backgroundCarousel').carousel('cycle');
+                //$('#backgroundCarousel').carousel({ pause: false, interval: 7000 });
 
                 //$('html#index .container').css("display","none");
                 $('#contentContainer').stop(true).hide().fadeIn(800);

@@ -1,8 +1,33 @@
 ﻿<div id="backgroundCarousel" class="carousel container slide">
     <!-- Carousel items -->
     <div class="carousel-inner">
-        <div class="active item one"></div>
-        <div class="item two"></div>
-        <div class="item three"></div>
+        <div class="active item">
+            <iframe name="StellanLindell.se" src="http://www.stellanlindell.se" scrolling="auto" seamless></iframe>
+        </div>
+        <div class="item">
+            <iframe name="PatrikLindell.se" src="http://www.patriklindell.se" scrolling="auto" seamless></iframe>
+        </div>
+        <div class="item">
+            <iframe name="svt.se" src="http://www.svt.se" scrolling="auto" seamless></iframe>
+        </div>
+        <div class="item">
+            <iframe name="umr.se" src="http://www.umr.se" scrolling="auto" seamless></iframe>
+        </div>
+        
+@*        @foreach (var item in Model) {
+            if (item == Model.First()) { 
+                @:<div class="active item">
+            }
+            if (item != Model.First()) { 
+                @:<div class="item">
+            }
+            <img class="changeUserThemeCarouselImage" src="@Url.Content(item.Path+"thumbnail.png")" data-themename="@item.Name">
+            if (item == Model.First()) { 
+                @:</div>
+            }
+            if (item != Model.First()) { 
+                @:</div>
+            }
+        }*@
     </div>
 </div>
