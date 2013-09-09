@@ -4,11 +4,11 @@
 /// <reference path="../bootstrap.min.js" />
 /// <reference path="../../Views/Shared/_Layout.cshtml" />
 /// <reference path="MainModalModel.js" />
-/*global mainModalScript:true*/
+/*global MainModalScript:true*/
 
 $(document).ready(function () {
     "use strict";
-    var mainModal = mainModalScript();
+    var mainModal = new MainModalScript();
 
     $('.mainModalBtn').click(function (event) {
         event.preventDefault();

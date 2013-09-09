@@ -7,13 +7,13 @@
 /// <reference path="MainModalModel.js" />
 /// <reference path="AccountModel.js" />
 /*global UIModelScript:true*/
-/*global mainModalScript:true*/
-/*global accountModelScript:true*/
+/*global MainModalScript:true*/
+/*global AccountModelScript:true*/
 
 $(document).ready(function () {
     "use strict";
-    var accountScript = accountModelScript();
-    var UI = UIModelScript();
+    var accountScript = new AccountModelScript();
+    var UI = new UIModelScript();
     //UI.containerDIVOpen = false;
     //UI.toggleReferencesPage();
 

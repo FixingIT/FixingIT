@@ -4,7 +4,7 @@
 /// <reference path="../bootstrap.min.js" />
 /// <reference path="../../Views/Shared/_Layout.cshtml" />
 
-var mainModalScript = (function () {
+var MainModalScript = (function () {
     return {
         setModal: function (title, url, footerurl, reload, error) {
             $('#circleG').fadeOut(1);

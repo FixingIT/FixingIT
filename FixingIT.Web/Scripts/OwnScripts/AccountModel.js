@@ -4,7 +4,7 @@
 /// <reference path="../bootstrap.min.js" />
 /// <reference path="../../Views/Shared/_Layout.cshtml" />
 
-var accountModelScript = (function () {
+var AccountModelScript = (function () {
     return {
         externalLogin: function (provider, displayName, returnUrl) {
             "use strict";
